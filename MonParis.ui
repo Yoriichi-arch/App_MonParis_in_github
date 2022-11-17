@@ -1,0 +1,2476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Profile</class>
+ <widget class="QMainWindow" name="Profile">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>300</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Mon Paris</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(16, 16, 16);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-40</y>
+      <width>300</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>160</y>
+        <width>301</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="Line" name="line">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(157, 157, 157);</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <property name="rightMargin">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="font">
+            <font>
+             <family>Bahnschrift SemiBold Condensed</family>
+             <pointsize>16</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+alternate-background-color: rgb(85, 170, 127);</string>
+           </property>
+           <property name="text">
+            <string>Имя</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 200, 200);
+border: 1px solid rgba(255, 255, 255, 150);
+
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="maxLength">
+            <number>35</number>
+           </property>
+           <property name="dragEnabled">
+            <bool>true</bool>
+           </property>
+           <property name="placeholderText">
+            <string>введите имя...</string>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="line_2">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(157, 157, 157);</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontall_layout">
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <property name="rightMargin">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="font">
+            <font>
+             <family>Bahnschrift SemiBold Condensed</family>
+             <pointsize>16</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+alternate-background-color: rgb(85, 170, 127);</string>
+           </property>
+           <property name="text">
+            <string>Номер телефона</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_2">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 200, 200);
+border: 1px solid rgba(255, 255, 255, 150);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="maxLength">
+            <number>11</number>
+           </property>
+           <property name="frame">
+            <bool>true</bool>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+           <property name="placeholderText">
+            <string>+7(XXX) XXX-XX-XX</string>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="line_3">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(157, 157, 157);</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontall_layout_3">
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <property name="rightMargin">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="font">
+            <font>
+             <family>Bahnschrift SemiBold Condensed</family>
+             <pointsize>16</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+alternate-background-color: rgb(85, 170, 127);</string>
+           </property>
+           <property name="text">
+            <string>Email</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_3">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 200, 200);
+border: 1px solid rgba(255, 255, 255, 150);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="maxLength">
+            <number>35</number>
+           </property>
+           <property name="placeholderText">
+            <string>введите адрес эл. почты...</string>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="line_4">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(157, 157, 157);</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontall_layout_2">
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <property name="rightMargin">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="font">
+            <font>
+             <family>Bahnschrift SemiBold Condensed</family>
+             <pointsize>16</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 255, 255);
+alternate-background-color: rgb(85, 170, 127);</string>
+           </property>
+           <property name="text">
+            <string>Адрес</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_4">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 200, 200);
+border: 1px solid rgba(255, 255, 255, 150);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="maxLength">
+            <number>35</number>
+           </property>
+           <property name="placeholderText">
+            <string>введите адрес...</string>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QPushButton" name="save">
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Bahnschrift</family>
+           <pointsize>9</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 2px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(0, 0, 0);
+	border: 3px solid #555;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Сохранить</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_5">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(157, 157, 157);</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>80</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift SemiBold Condensed</family>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+alternate-background-color: rgb(85, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string>Профиль</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>84</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift Light</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>МОИ ДАННЫЕ</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>311</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabWidget {
+border: 0px
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Салаты</string>
+       </attribute>
+       <widget class="QWidget" name="verticalLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>301</width>
+          <height>511</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="leftMargin">
+          <number>8</number>
+         </property>
+         <property name="rightMargin">
+          <number>8</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="label_10">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Цезарь с куриной грудкой</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 2px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>350₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QLabel" name="label_11">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Цезарь с креветками</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_5">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 3px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>410₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_11">
+           <item>
+            <widget class="QLabel" name="label_16">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="acceptDrops">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Тёплый мясной салат</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_9">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 3px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>390₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_10">
+           <item>
+            <widget class="QLabel" name="label_15">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Оливье по-французски</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 3px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>370₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <widget class="QLabel" name="label_13">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>Тёплый французский салат</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_6">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 3px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>449₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <item>
+            <widget class="QLabel" name="label_14">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Нисуаз с тунцом</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_7">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 3px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>470₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Супы</string>
+       </attribute>
+       <widget class="QWidget" name="verticalLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>301</width>
+          <height>511</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="leftMargin">
+          <number>8</number>
+         </property>
+         <property name="rightMargin">
+          <number>8</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QLabel" name="label_12">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Луковый суп</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_8">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 2px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>380₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_12">
+           <item>
+            <widget class="QLabel" name="label_17">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Томатный суп </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_10">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 3px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>320₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_13">
+           <item>
+            <widget class="QLabel" name="label_18">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="acceptDrops">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Суп со шпинатом</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_11">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 3px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>285₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_14">
+           <item>
+            <widget class="QLabel" name="label_19">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Венгерский суп гуляш</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_12">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 3px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>310₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_15">
+           <item>
+            <widget class="QLabel" name="label_20">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>Грибной крем-суп</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_13">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 3px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>280₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_16">
+           <item>
+            <widget class="QLabel" name="label_21">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Потофе</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_14">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 3px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>390₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Горячее</string>
+       </attribute>
+       <widget class="QWidget" name="verticalLayoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>301</width>
+          <height>511</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="leftMargin">
+          <number>8</number>
+         </property>
+         <property name="rightMargin">
+          <number>8</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_17">
+           <item>
+            <widget class="QLabel" name="label_22">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Утка с яблоками</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_15">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 2px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>605₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_18">
+           <item>
+            <widget class="QLabel" name="label_23">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Кассуле</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_16">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 3px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>450₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_19">
+           <item>
+            <widget class="QLabel" name="label_24">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="acceptDrops">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Беф-бургиньон</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_17">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 3px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>560₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_20">
+           <item>
+            <widget class="QLabel" name="label_25">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Куриное филе в травах</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_18">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 3px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>336₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_21">
+           <item>
+            <widget class="QLabel" name="label_26">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>Форель по-бретонски</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_19">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 3px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>480₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_22">
+           <item>
+            <widget class="QLabel" name="label_27">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Рёбра с картофелем</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_20">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 3px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>540₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Закуски</string>
+       </attribute>
+       <widget class="QWidget" name="verticalLayoutWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>301</width>
+          <height>511</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <property name="leftMargin">
+          <number>8</number>
+         </property>
+         <property name="rightMargin">
+          <number>8</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_23">
+           <item>
+            <widget class="QLabel" name="label_28">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Сырная тарелка</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_21">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 2px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>768₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_24">
+           <item>
+            <widget class="QLabel" name="label_29">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Мясная тарелка</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_22">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 3px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>585₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_25">
+           <item>
+            <widget class="QLabel" name="label_30">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="acceptDrops">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Пивная тарелка</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_23">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 3px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>570₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_26">
+           <item>
+            <widget class="QLabel" name="label_31">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Лодочка с сыром и яйцом</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_24">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 3px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>360₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_27">
+           <item>
+            <widget class="QLabel" name="label_32">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>Фоккачча</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_25">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 3px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>449₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_28">
+           <item>
+            <widget class="QLabel" name="label_33">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Брускета с лососем</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_26">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 3px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>210₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Кофе</string>
+       </attribute>
+       <widget class="QWidget" name="verticalLayoutWidget_11">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>301</width>
+          <height>511</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_12">
+         <property name="leftMargin">
+          <number>8</number>
+         </property>
+         <property name="rightMargin">
+          <number>8</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_53">
+           <item>
+            <widget class="QLabel" name="label_60">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Капучино</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_51">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 2px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>140₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_54">
+           <item>
+            <widget class="QLabel" name="label_61">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Латте</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_52">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 2px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>150₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_55">
+           <item>
+            <widget class="QLabel" name="label_62">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="acceptDrops">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Эспрессо</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_53">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 2px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>80₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_56">
+           <item>
+            <widget class="QLabel" name="label_63">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Макиато</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_54">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 2px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>100₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_57">
+           <item>
+            <widget class="QLabel" name="label_64">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;
+</string>
+             </property>
+             <property name="text">
+              <string>Доппио</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_55">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 2px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>120₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_59">
+           <item>
+            <widget class="QLabel" name="label_66">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Американо</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_57">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 2px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>100₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_60">
+           <item>
+            <widget class="QLabel" name="label_67">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Фэт вайт</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_58">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 2px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>150₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_61">
+           <item>
+            <widget class="QLabel" name="label_68">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Халва латте</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_59">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 2px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>180₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_62">
+           <item>
+            <widget class="QLabel" name="label_69">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Арахисовый латте</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_60">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 2px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>200₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_58">
+           <item>
+            <widget class="QLabel" name="label_65">
+             <property name="font">
+              <font>
+               <family>Bahnschrift</family>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bahnschrift&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Раф</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_56">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 1px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(50, 50, 50);
+	border: 2px solid #555;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>160₽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>300</y>
+        <width>157</width>
+        <height>33</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift SemiBold Condensed</family>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+alternate-background-color: rgb(85, 170, 127);</string>
+      </property>
+      <property name="text">
+       <string>Будущая корзина</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>530</y>
+      <width>300</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(30, 30, 30);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="push_profile">
+       <property name="minimumSize">
+        <size>
+         <width>52</width>
+         <height>52</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>52</width>
+         <height>52</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 2px solid #fff;
+border-radius: 15;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(0, 0, 0);
+	border: 3px solid #555;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Профиль</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="push_menu">
+       <property name="minimumSize">
+        <size>
+         <width>52</width>
+         <height>52</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>52</width>
+         <height>52</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 2px solid #fff;
+border-radius: 15;
+}
+
+QPushButton:pressed {
+	background-color: rgb(0, 0, 0);
+	border: 3px solid #555;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Меню</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="push_basket">
+       <property name="minimumSize">
+        <size>
+         <width>52</width>
+         <height>52</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>52</width>
+         <height>52</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Bahnschrift</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 2px solid #fff;
+border-radius: 15;
+}
+
+QPushButton:pressed {
+	background-color: rgb(0, 0, 0);
+	border: 3px solid #555;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Корзина</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../../../Desktop/Montserrat/static/Montserrat-Black.ttf"/>
+ </resources>
+ <connections/>
+</ui>
