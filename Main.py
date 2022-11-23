@@ -16,6 +16,7 @@ class Profile(QMainWindow):
         super(Profile, self).__init__()
         uic.loadUi('MonParis.ui', self)
         self.stackedWidget_2.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(0)
         self.label_7.clear()
 
         self.sql = sqlite3.connect('registration.db')
@@ -36,8 +37,8 @@ class Profile(QMainWindow):
                                    )""")
         self.sql.commit()
 
-        self.cursor.execute("SELECT name, number, email, address FROM users")
-        if self.cursor.fetchall():
+        self.cursor.execute("SELECT name FROM users")
+        if self.cursor.fetchone():
             self.cursor.execute("SELECT name FROM users")
             a = self.cursor.fetchone()
             self.lineEdit.setText(*a)
@@ -54,7 +55,11 @@ class Profile(QMainWindow):
             a = self.cursor.fetchone()
             self.lineEdit_4.setText(*a)
 
-            self.label_8.setText('Пользователь зарегестрирован')
+            self.label_8.setText(f'Здравствуйте, {self.lineEdit.text()}')
+        else:
+            self.label_8.setText('Пользователь не зарегестрирован')
+
+        self.exit.clicked.connect(self.exits)
 
 
 
@@ -124,6 +129,16 @@ class Profile(QMainWindow):
         self.tableView.setColumnWidth(1, 30)
         self.tableView.setColumnWidth(2, 76)
 
+    def exits(self):
+        self.cursor.execute("DELETE from users")
+        self.sql.commit()
+        self.lineEdit.clear()
+        self.lineEdit_2.clear()
+        self.lineEdit_3.clear()
+        self.lineEdit_4.clear()
+        self.label_8.setText('Пользователь не зарегестрирован')
+
+
     def window_profile(self):
         self.stackedWidget_2.setCurrentIndex(0)
 
@@ -134,20 +149,25 @@ class Profile(QMainWindow):
         self.stackedWidget_2.setCurrentIndex(2)
 
     def save_all(self):
-        name = self.lineEdit.text()
-        number = self.lineEdit_2.text()
-        email = self.lineEdit_3.text()
-        address = self.lineEdit_4.text()
-        self.cursor.execute("SELECT name FROM users")
-        if self.cursor.fetchone() is None:
-            self.cursor.execute(f"INSERT INTO users VALUES (?, ?, ?, ?)", (name, number, email, address))
-            self.sql.commit()
-        else:
-            self.label_8.setText('Пользователь уже зарегестрирован')
+            name = self.lineEdit.text()
+            number = self.lineEdit_2.text()
+            email = self.lineEdit_3.text()
+            address = self.lineEdit_4.text()
+            self.cursor.execute("SELECT name FROM users")
+            if self.cursor.fetchone() is None:
+                if (name == '') or (number == '') or (email == '') or (address == ''):
+                    self.label_8.setText('Заполните все поля')
+                else:
+                    self.cursor.execute(f"INSERT INTO users VALUES (?, ?, ?, ?)", (name, number, email, address))
+                    self.sql.commit()
+                    self.label_8.setText(f'Здравствуйте, {self.lineEdit.text()}')
+            else:
+                self.label_8.setText('Пользователь уже зарегестрирован')
+
 
     def ordered(self):
         self.cursor.execute("SELECT name, number, email, address FROM users")
-        if self.cursor.fetchall():
+        if self.cursor.fetchall() and self.cursor.execute("SELECT * FROM menu").fetchall():
             self.cursor.execute("DELETE from menu")
             self.sql.commit()
             self.model = QSqlTableModel(self, self.db)
@@ -158,8 +178,11 @@ class Profile(QMainWindow):
             self.tableView.setColumnWidth(1, 30)
             self.tableView.setColumnWidth(2, 76)
             self.label_7.setText('Ожидайте ваш заказ :)')
-        else:
+        elif (self.cursor.execute("SELECT name FROM users").fetchone() is None):
             self.label_7.setText('Вы не авторизованы :(')
+        elif self.cursor.execute("SELECT name FROM users").fetchone() \
+                and self.cursor.execute("SELECT * FROM menu").fetchone() is None:
+            self.label_7.setText('Вы что-то забыли :)')
 
     # Цезарь с куриной грудкой
     def add_food_1(self):
