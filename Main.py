@@ -1,7 +1,6 @@
 import sys
 import time
 import sqlite3
-import datetime as dt
 
 from PyQt5.QtSql import QSqlDatabase, QSqlTableModel
 from PyQt5 import uic
