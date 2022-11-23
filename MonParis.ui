@@ -42,7 +42,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QWidget" name="verticalLayoutWidget_2">
@@ -108,6 +108,9 @@ border: 1px solid rgba(255, 255, 255, 150);
            </property>
            <property name="dragEnabled">
             <bool>true</bool>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
            </property>
            <property name="placeholderText">
             <string>введите имя...</string>
@@ -302,28 +305,46 @@ border: 1px solid rgba(255, 255, 255, 150);</string>
          </item>
         </layout>
        </item>
-       <item alignment="Qt::AlignHCenter">
-        <widget class="QPushButton" name="save">
-         <property name="minimumSize">
-          <size>
-           <width>100</width>
-           <height>20</height>
-          </size>
-         </property>
-         <property name="font">
-          <font>
-           <family>Bahnschrift</family>
-           <pointsize>9</pointsize>
-           <weight>50</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="layoutDirection">
-          <enum>Qt::LeftToRight</enum>
-         </property>
+       <item>
+        <widget class="Line" name="line_5">
          <property name="styleSheet">
-          <string notr="true">QPushButton{
+          <string notr="true">background-color: rgb(157, 157, 157);</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="save">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Bahnschrift</family>
+             <pointsize>9</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
 	font: 9pt &quot;Bahnschrift&quot;;
 color: rgba(255, 255, 255, 200);
 border: 2px solid #fff;
@@ -335,21 +356,13 @@ QPushButton:pressed {
 	border: 3px solid #555;
 }
 </string>
-         </property>
-         <property name="text">
-          <string>Сохранить</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="Line" name="line_5">
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(157, 157, 157);</string>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
+           </property>
+           <property name="text">
+            <string>Сохранить</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </item>
       </layout>
      </widget>
@@ -446,10 +459,15 @@ alternate-background-color: rgb(85, 170, 127);</string>
       <property name="styleSheet">
        <string notr="true">QTabWidget {
 border: 0px
+}
+QHeaderView::section
+{
+  color: rgb(255, 255, 255);
+  background-color: rgb(16, 16, 16);
 }</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -1086,7 +1104,7 @@ font: 12pt &quot;Bahnschrift&quot;;</string>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_390_2">
+            <widget class="QPushButton" name="pushButton_393">
              <property name="maximumSize">
               <size>
                <width>70</width>
@@ -1108,7 +1126,7 @@ QPushButton:pressed {
 </string>
              </property>
              <property name="text">
-              <string>390₽</string>
+              <string>393₽</string>
              </property>
             </widget>
            </item>
@@ -1701,7 +1719,7 @@ font: 12pt &quot;Bahnschrift&quot;;
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_449_2">
+            <widget class="QPushButton" name="pushButton_448">
              <property name="maximumSize">
               <size>
                <width>70</width>
@@ -1723,7 +1741,7 @@ QPushButton:pressed {
 </string>
              </property>
              <property name="text">
-              <string>449₽</string>
+              <string>448₽</string>
              </property>
             </widget>
            </item>
@@ -2085,7 +2103,7 @@ font: 12pt &quot;Bahnschrift&quot;;</string>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_100_2">
+            <widget class="QPushButton" name="pushButton_105">
              <property name="maximumSize">
               <size>
                <width>70</width>
@@ -2107,7 +2125,7 @@ QPushButton:pressed {
 </string>
              </property>
              <property name="text">
-              <string>100₽</string>
+              <string>105₽</string>
              </property>
             </widget>
            </item>
@@ -2131,12 +2149,12 @@ QPushButton:pressed {
 font: 12pt &quot;Bahnschrift&quot;;</string>
              </property>
              <property name="text">
-              <string>Фэт вайт</string>
+              <string>Флэт Уайт</string>
              </property>
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_150_2">
+            <widget class="QPushButton" name="pushButton_155">
              <property name="maximumSize">
               <size>
                <width>70</width>
@@ -2158,7 +2176,7 @@ QPushButton:pressed {
 </string>
              </property>
              <property name="text">
-              <string>150₽</string>
+              <string>155₽</string>
              </property>
             </widget>
            </item>
@@ -2323,29 +2341,95 @@ QPushButton:pressed {
      </widget>
     </widget>
     <widget class="QWidget" name="page_3">
+     <widget class="QTableView" name="tableView">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>300</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableView
+{
+  color: rgb(255, 255, 255);
+}
+
+QHeaderView::section
+{
+  color: rgb(255, 255, 255);
+  background-color: rgb(16, 16, 16);
+}</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="order">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>540</y>
+        <width>100</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Bahnschrift</family>
+        <pointsize>9</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	font: 9pt &quot;Bahnschrift&quot;;
+color: rgba(255, 255, 255, 200);
+border: 2px solid #fff;
+border-radius: 10;	
+}
+
+QPushButton:pressed {
+	background-color: rgb(0, 0, 0);
+	border: 3px solid #555;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Заказать</string>
+      </property>
+     </widget>
      <widget class="QLabel" name="label_7">
       <property name="geometry">
        <rect>
-        <x>70</x>
-        <y>300</y>
-        <width>157</width>
-        <height>33</height>
+        <x>10</x>
+        <y>540</y>
+        <width>171</width>
+        <height>21</height>
        </rect>
       </property>
       <property name="font">
        <font>
-        <family>Bahnschrift SemiBold Condensed</family>
-        <pointsize>20</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
+        <family>Bahnschrift Light</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">color: rgb(255, 255, 255);
-alternate-background-color: rgb(85, 170, 127);</string>
+       <string notr="true">color: rgb(255, 255, 255);</string>
       </property>
       <property name="text">
-       <string>Будущая корзина</string>
+       <string/>
       </property>
      </widget>
     </widget>
